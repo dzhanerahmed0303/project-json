@@ -2,11 +2,11 @@
     {
         "id":1,
         "name": "labrador",
-        "image": "./assets/labrador"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/labrador.jpg?raw=true"
     },
     {
         "id":1,
         "name": "labrador",
-        "image": "./assets/poodle"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/poodle.jpg?raw=true"
     }
 ]
