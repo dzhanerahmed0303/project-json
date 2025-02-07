@@ -12,41 +12,41 @@
     {
         "id":3,
         "name": "German Shepherd",
-        "image": "./assets/germanShepherd"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/germanShepherd.jpg?raw=true"
     },
     {
         "id":4,
         "name": "Puli",
-        "image": "./assets/Puli"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/puli.jpg?raw=true"
     },
     {
         "id":5,
         "name": "Collie",
-        "image": "./assets/Collie"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/Collie.jpg?raw=true"
     },
     {
         "id":6,
         "name": "Saluki",
-        "image": "./assets/saluki"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/saluki.jpg?raw=true"
     },
     {
         "id":7,
         "name": "Pharaoh Hound",
-        "image": "./assets/pharaohHound"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/pharaohHound.jpg?raw=true"
     },
     {
         "id":8,
         "name": "Dachshund",
-        "image": "./assets/dachshund"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/dachshund.jpg?raw=true"
     },
     {
         "id":9,
         "name": "Belgian Shepherd",
-        "image": "./assets/belgianShepherd"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/belgianShepherd.jpg?raw=true"
     },
     {
         "id":10,
         "name": "Beagle",
-        "image": "./assets/beagle"
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/beagle.jpg?raw=true"
     }
 ]
