@@ -1,12 +1,52 @@
 [
     {
         "id":1,
-        "name": "labrador",
+        "name": "Labrador",
         "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/labrador.jpg?raw=true"
     },
     {
-        "id":1,
-        "name": "labrador",
+        "id":2,
+        "name": "Poodle",
         "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/poodle.jpg?raw=true"
+    },
+    {
+        "id":3,
+        "name": "German Shepherd",
+        "image": "./assets/germanShepherd"
+    },
+    {
+        "id":4,
+        "name": "Puli",
+        "image": "./assets/Puli"
+    },
+    {
+        "id":5,
+        "name": "Collie",
+        "image": "./assets/Collie"
+    },
+    {
+        "id":6,
+        "name": "Saluki",
+        "image": "./assets/saluki"
+    },
+    {
+        "id":7,
+        "name": "Pharaoh Hound",
+        "image": "./assets/pharaohHound"
+    },
+    {
+        "id":8,
+        "name": "Dachshund",
+        "image": "./assets/dachshund"
+    },
+    {
+        "id":9,
+        "name": "Belgian Shepherd",
+        "image": "./assets/belgianShepherd"
+    },
+    {
+        "id":10,
+        "name": "Beagle",
+        "image": "./assets/beagle"
     }
 ]
