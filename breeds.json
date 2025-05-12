@@ -1,52 +1,272 @@
 [
     {
-        "id":1,
+        "id": 1,
         "name": "Labrador",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/labrador.jpg?raw=true"
+        "description": "Labradors are friendly, active, and outgoing dogs, popular as family pets.",
+        "age": 5,
+        "isActive": true,
+        "birthDate": "2018-06-15",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/labrador.jpg?raw=true",
+        "breedType": "Sporting",
+        "hobbies": ["Fetching", "Swimming", "Running"],
+        "owner": {
+            "id": 101,
+            "name": "John Doe",
+            "isExperienced": true,
+            "contact": {
+                "phone": "+123456789",
+                "email": "johndoe@example.com"
+            },
+            "address": {
+                "street": "123 Labrador Lane",
+                "city": "Dogtown",
+                "postalCode": "98765",
+                "country": "Canine Nation"
+            },
+            "bio": "John is an experienced dog owner who enjoys outdoor activities with his Labrador. He has been a dog lover all his life."
+        }
     },
     {
-        "id":2,
+        "id": 2,
         "name": "Poodle",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/poodle.jpg?raw=true"
+        "description": "Poodles are highly intelligent and elegant dogs, known for their curly coats.",
+        "age": 4,
+        "isActive": true,
+        "birthDate": "2019-08-10",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/poodle.jpg?raw=true",
+        "breedType": "Non-Sporting",
+        "hobbies": ["Dancing", "Agility training", "Running"],
+        "owner": {
+            "id": 102,
+            "name": "Alice Johnson",
+            "isExperienced": true,
+            "contact": {
+                "phone": "+987654321",
+                "email": "alice.johnson@example.com"
+            },
+            "address": {
+                "street": "456 Poodle Avenue",
+                "city": "Pet City",
+                "postalCode": "12345",
+                "country": "Furland"
+            },
+            "bio": "Alice is a professional dog trainer who loves working with poodles. She has trained several dogs in obedience and agility."
+        }
     },
     {
-        "id":3,
+        "id": 3,
         "name": "German Shepherd",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/germanShepherd.jpg?raw=true"
+        "description": "German Shepherds are known for their intelligence, versatility, and loyalty.",
+        "age": 6,
+        "isActive": true,
+        "birthDate": "2017-11-25",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/germanShepherd.jpg?raw=true",
+        "breedType": "Herding",
+        "hobbies": ["Herding", "Playing fetch", "Obedience training"],
+        "owner": {
+            "id": 103,
+            "name": "Robert Smith",
+            "isExperienced": true,
+            "contact": {
+                "phone": "+112233445",
+                "email": "robert.smith@example.com"
+            },
+            "address": {
+                "street": "789 Shepherd Road",
+                "city": "Canine Valley",
+                "postalCode": "56789",
+                "country": "Pawland"
+            },
+            "bio": "Robert is an avid dog lover and owner of a German Shepherd. He enjoys working with his dog in various dog sports and training."
+        }
     },
     {
-        "id":4,
+        "id": 4,
         "name": "Puli",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/puli.jpg?raw=true"
+        "description": "Pulis are sheepdogs with a unique coat that forms corded locks, they are agile and hardworking.",
+        "age": 3,
+        "isActive": true,
+        "birthDate": "2020-04-12",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/puli.jpg?raw=true",
+        "breedType": "Herding",
+        "hobbies": ["Herding", "Running", "Playing fetch"],
+        "owner": {
+            "id": 104,
+            "name": "Emily Brown",
+            "isExperienced": false,
+            "contact": {
+                "phone": "+332211445",
+                "email": "emily.brown@example.com"
+            },
+            "address": {
+                "street": "101 Corded Lane",
+                "city": "Dogville",
+                "postalCode": "23456",
+                "country": "Barkland"
+            },
+            "bio": "Emily is a first-time dog owner and enjoys spending time with her Puli learning how to herd and run outdoors."
+        }
     },
     {
-        "id":5,
+        "id": 5,
         "name": "Collie",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/Collie.jpg?raw=true"
+        "description": "Collies are known for their beautiful coats and are great herders with a calm temperament.",
+        "age": 7,
+        "isActive": false,
+        "birthDate": "2016-05-21",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/Collie.jpg?raw=true",
+        "breedType": "Herding",
+        "hobbies": ["Watching", "Resting", "Herding"],
+        "owner": {
+            "id": 105,
+            "name": "George Lee",
+            "isExperienced": true,
+            "contact": {
+                "phone": "+667788990",
+                "email": "george.lee@example.com"
+            },
+            "address": {
+                "street": "202 Collie Crescent",
+                "city": "Furville",
+                "postalCode": "34567",
+                "country": "Dogtopia"
+            },
+            "bio": "George has been a Collie owner for many years and loves spending time with his dog in the countryside."
+        }
     },
     {
-        "id":6,
+        "id": 6,
         "name": "Saluki",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/saluki.jpg?raw=true"
+        "description": "Salukis are ancient sighthounds known for their grace and independence.",
+        "age": 2,
+        "isActive": true,
+        "birthDate": "2022-01-10",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/saluki.jpg?raw=true",
+        "breedType": "Hound",
+        "hobbies": ["Chasing", "Running", "Exploring"],
+        "owner": {
+            "id": 106,
+            "name": "Samantha Green",
+            "isExperienced": false,
+            "contact": {
+                "phone": "+556677889",
+                "email": "samantha.green@example.com"
+            },
+            "address": {
+                "street": "303 Saluki Street",
+                "city": "Canine Park",
+                "postalCode": "45678",
+                "country": "Pawland"
+            },
+            "bio": "Samantha is new to dog ownership but enjoys exploring the outdoors with her Saluki."
+        }
     },
     {
-        "id":7,
+        "id": 7,
         "name": "Pharaoh Hound",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/pharaohHound.jpg?raw=true"
+        "description": "Pharaoh Hounds are elegant and energetic dogs with a history tied to ancient Egypt.",
+        "age": 4,
+        "isActive": true,
+        "birthDate": "2019-02-20",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/pharaohHound.jpg?raw=true",
+        "breedType": "Hound",
+        "hobbies": ["Chasing", "Running", "Hunting"],
+        "owner": {
+            "id": 107,
+            "name": "Michael Clark",
+            "isExperienced": true,
+            "contact": {
+                "phone": "+223344556",
+                "email": "michael.clark@example.com"
+            },
+            "address": {
+                "street": "404 Pharaoh Way",
+                "city": "Houndville",
+                "postalCode": "67890",
+                "country": "Barkerland"
+            },
+            "bio": "Michael is an experienced dog owner with a passion for dog sports and hunting."
+        }
     },
     {
-        "id":8,
+        "id": 8,
         "name": "Dachshund",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/dachshund.jpg?raw=true"
+        "description": "Dachshunds are small but brave dogs, known for their long bodies and short legs.",
+        "age": 3,
+        "isActive": true,
+        "birthDate": "2020-03-15",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/dachshund.jpg?raw=true",
+        "breedType": "Hound",
+        "hobbies": ["Digging", "Running", "Sniffing"],
+        "owner": {
+            "id": 108,
+            "name": "Karen Davis",
+            "isExperienced": false,
+            "contact": {
+                "phone": "+445566778",
+                "email": "karen.davis@example.com"
+            },
+            "address": {
+                "street": "505 Dachshund Drive",
+                "city": "Puppy City",
+                "postalCode": "56789",
+                "country": "Furryland"
+            },
+            "bio": "Karen is a new dog owner who loves playing with her Dachshund in the garden and taking it on walks."
+        }
     },
     {
-        "id":9,
+        "id": 9,
         "name": "Belgian Shepherd",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/belgianShepherd.jpg?raw=true"
+        "description": "Belgian Shepherds are highly intelligent and versatile working dogs, often used in police and military work.",
+        "age": 6,
+        "isActive": true,
+        "birthDate": "2017-10-05",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/belgianShepherd.jpg?raw=true",
+        "breedType": "Herding",
+        "hobbies": ["Agility", "Herding", "Training"],
+        "owner": {
+            "id": 109,
+            "name": "James Williams",
+            "isExperienced": true,
+            "contact": {
+                "phone": "+556677889",
+                "email": "james.williams@example.com"
+            },
+            "address": {
+                "street": "606 Shepherd Path",
+                "city": "Herdingtown",
+                "postalCode": "12345",
+                "country": "Dogdom"
+            },
+            "bio": "James is an experienced owner of Belgian Shepherds, often training his dog in agility and obedience."
+        }
     },
     {
-        "id":10,
+        "id": 10,
         "name": "Beagle",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/beagle.jpg?raw=true"
+        "description": "Beagles are friendly, curious, and merry dogs, famous for their keen sense of smell.",
+        "age": 5,
+        "isActive": true,
+        "birthDate": "2018-07-22",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/beagle.jpg?raw=true",
+        "breedType": "Hound",
+        "hobbies": ["Sniffing", "Running", "Exploring"],
+        "owner": {
+            "id": 110,
+            "name": "Olivia Martinez",
+            "isExperienced": true,
+            "contact": {
+                "phone": "+223344667",
+                "email": "olivia.martinez@example.com"
+            },
+            "address": {
+                "street": "707 Beagle Street",
+                "city": "Pawsville",
+                "postalCode": "87654",
+                "country": "Barkland"
+            },
+            "bio": "Olivia is a seasoned dog owner with years of experience in handling Beagles."
+        }
     }
 ]

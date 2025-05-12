@@ -1,10 +1,162 @@
 [
-    {
-        "id":1,
-      "name":"Joe"
-    },{
-      "id":2,
-      "name":"Joe"
-        
-    }
+  {
+      "id": 101,
+      "name": "John Doe",
+      "isExperienced": true,
+      "contact": {
+          "phone": "+32 123 45 67",
+          "email": "johndoe@example.com"
+      },
+      "address": {
+          "street": "123 Labrador Lane",
+          "city": "Dogtown",
+          "postalCode": "98765",
+          "country": "Canine Nation"
+      },
+      "bio": "John is an experienced dog owner who enjoys outdoor activities with his Labrador."
+  },
+  {
+      "id": 102,
+      "name": "Mary Smith",
+      "isExperienced": false,
+      "contact": {
+          "phone": "+32 987 65 43",
+          "email": "mary.smith@example.com"
+      },
+      "address": {
+          "street": "456 Poodle Road",
+          "city": "Poodle City",
+          "postalCode": "12345",
+          "country": "Canine Kingdom"
+      },
+      "bio": "Mary is a new dog owner who loves spending time with her playful poodle."
+  },
+  {
+      "id": 103,
+      "name": "Alice Green",
+      "isExperienced": true,
+      "contact": {
+          "phone": "+32 555 12 34",
+          "email": "alice.green@example.com"
+      },
+      "address": {
+          "street": "789 Shepherd Avenue",
+          "city": "Barker Town",
+          "postalCode": "54321",
+          "country": "Dogdom"
+      },
+      "bio": "Alice has a strong bond with her German Shepherd and enjoys training together."
+  },
+  {
+      "id": 104,
+      "name": "Eve White",
+      "isExperienced": false,
+      "contact": {
+          "phone": "+32 321 65 49",
+          "email": "eve.white@example.com"
+      },
+      "address": {
+          "street": "321 Puli Path",
+          "city": "Cordova",
+          "postalCode": "67890",
+          "country": "Pulikistan"
+      },
+      "bio": "Eve is a new Puli owner who loves exploring the outdoors with her dog."
+  },
+  {
+      "id": 105,
+      "name": "Tom Harrison",
+      "isExperienced": true,
+      "contact": {
+          "phone": "+32 432 16 78",
+          "email": "tom.harrison@example.com"
+      },
+      "address": {
+          "street": "654 Collie Crescent",
+          "city": "Herdsville",
+          "postalCode": "98765",
+          "country": "Collieland"
+      },
+      "bio": "Tom has been a Collie owner for years and enjoys taking his dog on long walks."
+  },
+  {
+      "id": 106,
+      "name": "Sarah Blue",
+      "isExperienced": true,
+      "contact": {
+          "phone": "+32 987 65 43",
+          "email": "sarah.blue@example.com"
+      },
+      "address": {
+          "street": "123 Saluki Street",
+          "city": "Houndtown",
+          "postalCode": "13579",
+          "country": "Salukistan"
+      },
+      "bio": "Sarah has a passion for Salukis and enjoys running with them in open fields."
+  },
+  {
+      "id": 107,
+      "name": "David King",
+      "isExperienced": true,
+      "contact": {
+          "phone": "+32 654 32 10",
+          "email": "david.king@example.com"
+      },
+      "address": {
+          "street": "456 Pharaoh Way",
+          "city": "Ancient City",
+          "postalCode": "24680",
+          "country": "Pharaohland"
+      },
+      "bio": "David is an experienced owner who loves exploring the history of the Pharaoh Hound breed."
+  },
+  {
+      "id": 108,
+      "name": "Rebecca Gray",
+      "isExperienced": false,
+      "contact": {
+          "phone": "+32 741 85 29",
+          "email": "rebecca.gray@example.com"
+      },
+      "address": {
+          "street": "789 Dachshund Drive",
+          "city": "Barkville",
+          "postalCode": "54321",
+          "country": "Dachshundland"
+      },
+      "bio": "Rebecca is a new dog owner who loves spending time with her quirky Dachshund."
+  },
+  {
+      "id": 109,
+      "name": "Michael Clark",
+      "isExperienced": true,
+      "contact": {
+          "phone": "+32 321 98 76",
+          "email": "michael.clark@example.com"
+      },
+      "address": {
+          "street": "101 Belgian Road",
+          "city": "Shepherdville",
+          "postalCode": "13579",
+          "country": "Belgium"
+      },
+      "bio": "Michael is an experienced shepherd and uses his Belgian Shepherd for agility and work."
+  },
+  {
+      "id": 110,
+      "name": "Linda Brown",
+      "isExperienced": false,
+      "contact": {
+          "phone": "+32 678 34 59",
+          "email": "linda.brown@example.com"
+      },
+      "address": {
+          "street": "102 Beagle Blvd",
+          "city": "Snifftown",
+          "postalCode": "54321",
+          "country": "Beagleland"
+      },
+      "bio": "Linda loves spending time with her Beagle, especially on nature walks."
+  }
 ]
