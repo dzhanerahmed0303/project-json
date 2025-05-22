@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+
+
+<head>
+    <%- include('../partials/header', { title: card.name }) %>
+        <link rel="stylesheet" href="/css/reset.css" />
+        <link rel="stylesheet" href="/css/styleDetail.css" />
+</head>
+
+<body>
+    <%- include('../partials/navbar') %>
+
+        <div class="container">
+            <a href="/honden" class="back-link">← Terug</a>
+
+
+            <div class="card-box">
+                <div class="card-image">
+                    <img src="<%= card.imageUrl %>" alt="<%= card.name %>">
+                    <div class="dog-stats">
+                        <span class="gender-badge <%= card.gender.toLowerCase() %>">
+                            <i class="fa-solid fa-venus-mars"></i>
+                            <%= card.gender==='Male' ? 'Mannelijk' : 'Vrouwelijk' %>
+                        </span>
+                        <span class="vaccinated-badge <%= card.vaccinated ? 'yes' : 'no' %>">
+                            <i class="fa-solid fa-syringe"></i>
+                            <%= card.vaccinated ? 'Gevaccineerd' : 'Niet gevaccineerd' %>
+                        </span>
+                        <span class="energy-badge">
+                            Energie: <%= card.energyLevel %> <i class="fa-solid fa-bolt"></i>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <h1>
+                        <%= card.name %>
+                    </h1>
+                    <p class="breed-age">
+                        <%= card.breedType %> • <%= card.age %> jaar oud
+                    </p>
+
+                    <div class="description-section">
+                        <h3>Over <%= card.name %>
+                        </h3>
+                        <p>
+                            <%= card.description %>
+                        </p>
+                    </div>
+
+                    <% if (card.abilities?.length) { %>
+                        <div class="abilities-section">
+                            <h3>Speciale vaardigheden</h3>
+                            <ul class="abilities-list">
+                                <% card.abilities.forEach(ability=> { %>
+                                    <li>
+                                        <%= ability %>
+                                    </li>
+                                    <% }); %>
+                            </ul>
+                        </div>
+                        <% } %>
+
+                            <% if (card.hobbies?.length) { %>
+                                <div class="hobbies-section">
+                                    <h3>Hobby’s</h3>
+                                    <ul class="hobbies-list">
+                                        <% card.hobbies.forEach(hobby=> { %>
+                                            <li>
+                                                <%= hobby %>
+                                            </li>
+                                            <% }); %>
+                                    </ul>
+                                </div>
+                                <% } %>
+
+                                    <div class="owner-info">
+                                        <h3>Baasje:</h3>
+                                        <div class="owner-card">
+                                            <div class="owner-avatar">
+                                                <i class="fas fa-user"></i>
+                                                <% if (owner.isExperienced) { %>
+                                                    <span class="expert-badge" title="Ervaren baasje">
+                                                        <i class="fas fa-star"></i>
+                                                    </span>
+                                                    <% } %>
+                                            </div>
+                                            <div class="owner-details">
+                                                <h4><a href="/owners/<%= owner.id %>">
+                                                        <%= owner.name %>
+                                                    </a></h4>
+                                                <p><i class="fas fa-map-marker-alt"></i>
+                                                    <%= owner.address.city %>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <%- include('../partials/footer') %>
+</body>
+
+</html>

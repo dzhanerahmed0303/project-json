@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('../partials/header', { title: 'Baasjes' }) %>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/ownerstyle.css">
+
+
+    <body>
+        <%- include('../partials/navbar') %>
+
+            <div class="container">
+                <h1 class="page-title">Our Pet Lovers Community</h1>
+                <p class="page-subtitle">Connect with fellow dog enthusiasts</p>
+
+                <div class="users-grid">
+                    <% users.forEach(user=> { %>
+                        <div class="user-card">
+                            <div class="user-card-header">
+                                <div class="user-avatar">
+                                    <i class="fas fa-user"></i>
+                                    <% if(user.isExperienced) { %>
+                                        <span class="expert-badge" title="Experienced Owner"><i
+                                                class="fas fa-star"></i></span>
+                                        <% } %>
+                                </div>
+                                <h3>
+                                    <%= user.name %>
+                                </h3>
+                                <p class="user-location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <%= user.address.city %>, <%= user.address.country %>
+                                </p>
+                            </div>
+                            <div class="user-card-body">
+                                <p class="user-bio">
+                                    <%= user.bio %>
+                                </p>
+                                <div class="user-contact">
+                                    <p><i class="fas fa-phone"></i>
+                                        <%= user.contact.phone %>
+                                    </p>
+                                    <p><i class="fas fa-envelope"></i>
+                                        <%= user.contact.email %>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="user-card-footer">
+                                <a href="/users/<%= user.id %>" class="btn profile-btn">View Profile</a>
+                            </div>
+                        </div>
+                        <% }); %>
+                </div>
+            </div>
+
+            <%- include('../partials/footer') %>
+    </body>
+
+</html>

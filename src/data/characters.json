@@ -1,0 +1,198 @@
+[
+    {
+        "id": 1,
+        "name": "Bobcho",
+        "description": "Labradors zijn vriendelijk, intelligent en energiek.",
+        "age": 3,
+        "isActive": true,
+        "birthDate": "2021-03-15",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/labrador.jpg?raw=true",
+        "breedType": "Labrador",
+        "hobbies": [
+            "Zwemmen",
+            "Spelen",
+            "Eten"
+        ],
+        "ownerId": 101,
+        "gender": "Male",
+        "vaccinated": true,
+        "guild": "Protect the weak, chew the wicked!",
+        "energyLevel": 8
+    },
+    {
+        "id": 2,
+        "name": "Olive",
+        "description": "Pulis zijn nieuwsgierig, vrolijk en vriendelijk.",
+        "age": 4,
+        "isActive": true,
+        "birthDate": "2020-07-22",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/puli.jpg?raw=true",
+        "breedType": "Puli",
+        "hobbies": [
+            "Snuffelen",
+            "Wandelen"
+        ],
+        "ownerId": 102,
+        "gender": "Female",
+        "vaccinated": false,
+        "guild": "Sing to the night, for the night sings back!",
+        "energyLevel": 7
+    },
+    {
+        "id": 3,
+        "name": "Rex",
+        "description": "Bekend om hun intelligentie, loyaliteit en trainbaarheid.",
+        "age": 5,
+        "isActive": true,
+        "birthDate": "2019-09-10",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/germanShepherd.jpg?raw=true",
+        "breedType": "Duitse Herder",
+        "hobbies": [
+            "Waken",
+            "Trainen"
+        ],
+        "ownerId": 103,
+        "gender": "Male",
+        "vaccinated": true,
+        "guild": "If you catch it, you keep it!",
+        "energyLevel": 9
+    },
+    {
+        "id": 4,
+        "name": "Princess",
+        "description": "Zachtaardig, sociaal en erg goed met kinderen.",
+        "age": 2,
+        "isActive": true,
+        "birthDate": "2022-01-30",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/Collie.jpg?raw=true",
+        "breedType": "Collie",
+        "hobbies": [
+            "Aporteren",
+            "Zwemmen"
+        ],
+        "ownerId": 104,
+        "gender": "Female",
+        "vaccinated": true,
+        "guild": "The nose knows all.",
+        "energyLevel": 7
+    },
+    {
+        "id": 5,
+        "name": "Curly",
+        "description": "Kalme, dappere hond met een kenmerkend uiterlijk.",
+        "age": 6,
+        "isActive": false,
+        "birthDate": "2018-05-11",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/poodle.jpg?raw=true",
+        "breedType": "Poodle",
+        "hobbies": [
+            "Rust",
+            "Slapen"
+        ],
+        "ownerId": 105,
+        "gender": "Male",
+        "vaccinated": true,
+        "guild": "Diplomacy by wagging.",
+        "energyLevel": 4
+    },
+    {
+        "id": 6,
+        "name": "Zeph",
+        "description": "Salukis are ancient sighthounds known for their grace and independence.",
+        "age": 2,
+        "isActive": true,
+        "birthDate": "2022-01-10",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/saluki.jpg?raw=true",
+        "breedType": "Saluki",
+        "hobbies": [
+            "Chasing",
+            "Running",
+            "Exploring"
+        ],
+        "ownerId": 106,
+        "gender": "Female",
+        "vaccinated": true,
+        "guild": "What doesn`t bend, we gnaw!",
+        "energyLevel": 9
+    },
+    {
+        "id": 7,
+        "name": "Royal",
+        "description": "Pharaoh Hounds are elegant and energetic dogs with a history tied to ancient Egypt.",
+        "age": 4,
+        "isActive": true,
+        "birthDate": "2019-02-20",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/pharaohHound.jpg?raw=true",
+        "breedType": "Pharaoh Hound",
+        "hobbies": [
+            "Chasing",
+            "Running",
+            "Hunting"
+        ],
+        "ownerId": 107,
+        "gender": "Male",
+        "vaccinated": false,
+        "guild": "Sleep now, bark later.",
+        "energyLevel": 8
+    },
+    {
+        "id": 8,
+        "name": "Sando",
+        "description": "Dachshunds are small but brave dogs, known for their long bodies and short legs.",
+        "age": 3,
+        "isActive": true,
+        "birthDate": "2020-03-15",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/dachshund.jpg?raw=true",
+        "breedType": "Dachshund",
+        "hobbies": [
+            "Digging",
+            "Running",
+            "Sniffing"
+        ],
+        "ownerId": 108,
+        "gender": "Male",
+        "vaccinated": true,
+        "guild": "Speed is life, wind is love.",
+        "energyLevel": 6
+    },
+    {
+        "id": 9,
+        "name": "Neo",
+        "description": "Belgian Shepherds are highly intelligent and versatile working dogs, often used in police and military work.",
+        "age": 6,
+        "isActive": true,
+        "birthDate": "2017-10-05",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/belgianShepherd.jpg?raw=true",
+        "breedType": "Belgian Shepherd",
+        "hobbies": [
+            "Agility",
+            "Herding",
+            "Training"
+        ],
+        "ownerId": 109,
+        "gender": "Male",
+        "vaccinated": true,
+        "guild": "Guardians of the sacred snacks.",
+        "energyLevel": 9
+    },
+    {
+        "id": 10,
+        "name": "Ushko",
+        "description": "Beagles are friendly, curious, and merry dogs, famous for their keen sense of smell.",
+        "age": 5,
+        "isActive": true,
+        "birthDate": "2018-07-22",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/beagle.jpg?raw=true",
+        "breedType": "Beagle",
+        "hobbies": [
+            "Sniffing",
+            "Running",
+            "Exploring"
+        ],
+        "ownerId": 110,
+        "gender": "Female",
+        "vaccinated": false,
+        "guild": "Small but mighty!",
+        "energyLevel": 8
+    }
+]

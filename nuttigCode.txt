@@ -1,0 +1,23 @@
+<div class="related-cards">
+                <h2>Other dogs from <%= owner.name %>
+                </h2>
+                <% if(relatedCards.length> 0) { %>
+                    <div class="related-grid">
+                        <% relatedCards.forEach(relatedCard=> { %>
+                            <a href="/cards/<%= relatedCard.id %>" class="related-card">
+                                <img src="<%= relatedCard.imageUrl %>" alt="<%= relatedCard.name %>">
+                                <h4>
+                                    <%= relatedCard.name %>
+                                </h4>
+                                <p>
+                                    <%= relatedCard.breedType %>, <%= relatedCard.age %> years
+                                </p>
+                            </a>
+                            <% }); %>
+                    </div>
+                    <% } else { %>
+                        <p class="no-related">
+                            <%= owner.name %> has no other dogs in our community.
+                        </p>
+                        <% } %>
+            </div>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+
+<%- include('../partials/header', { title: 'Mijn hondjes' }) %>
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+
+    <body>
+        <%- include('../partials/navbar') %>
+
+            <div class="container">
+                <div class="filter-sort-container">
+                    <form method="GET" class="filter-form">
+                        <input type="text" name="search" placeholder="🔍 Zoek een hondje..." value="<%= search %>">
+                        <button type="submit">Zoek</button>
+                    </form>
+
+                    <div class="sort-options">
+                        <select id="sort-field" name="sort" onchange="updateSort()">
+                            <option value="">Sorteer op...</option>
+                            <option value="name" <%=sort==='name' ? 'selected' : '' %>>Naam</option>
+                            <option value="age" <%=sort==='age' ? 'selected' : '' %>>Leeftijd</option>
+                            <option value="breedType" <%=sort==='breedType' ? 'selected' : '' %>>Ras</option>
+                        </select>
+
+                        <select id="sort-order" name="order" onchange="updateSort()">
+                            <option value="asc" <%=order==='asc' ? 'selected' : '' %>>Oplopend</option>
+                            <option value="desc" <%=order==='desc' ? 'selected' : '' %>>Aflopend</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="cards-grid">
+                    <% cards.forEach(card=> { %>
+                        <div class="dog-card">
+                            <a href="/honden/<%= card.id %>" class="card-link">
+                                <img src="<%= card.imageUrl %>" alt="Picture of <%= card.name %>" class="dog-image">
+                                <div class="dog-info">
+                                    <h2>
+                                        <%= card.name %> <span class="gender">
+                                                <%= card.gender==='Male' ? '♂' : '♀' %>
+                                            </span>
+                                    </h2>
+                                    <p class="breed-age">
+                                        <%= card.breedType %> • <%= card.age %> jaar
+                                    </p>
+                                    <div class="energy-level">
+                                        <% Array.from({ length: card.energyLevel }).forEach(()=> { %>
+                                            <i class="fas fa-bolt" style="color: #FF7F50;"></i>
+                                            <% }); %>
+                                    </div>
+                                    <p class="vaccinated <%= card.vaccinated ? 'vaccinated-yes' : 'vaccinated-no' %>">
+                                        <%= card.vaccinated ? '✓ Gevaccineerd' : '✗ Niet gevaccineerd' %>
+                                    </p>
+                                </div>
+                            </a>
+                        </div>
+                        <% }); %>
+                </div>
+
+                <% if (cards.length===0) { %>
+                    <div class="no-results">
+                        <p>Geen hondjes gevonden met deze criteria.</p>
+                        <a href="/honden" class="btn">Filters wissen</a>
+                    </div>
+                    <% } %>
+            </div>
+
+            <%- include('../partials/footer') %>
+
+                <script>
+                    function updateSort() {
+                        const searchParams = new URLSearchParams(window.location.search);
+                        const sortField = document.getElementById('sort-field').value;
+                        const sortOrder = document.getElementById('sort-order').value;
+
+                        if (sortField) {
+                            searchParams.set('sort', sortField);
+                            searchParams.set('order', sortOrder);
+                        } else {
+                            searchParams.delete('sort');
+                            searchParams.delete('order');
+                        }
+
+                        window.location.search = searchParams.toString();
+                    }
+                </script>
+    </body>
+
+    </html>

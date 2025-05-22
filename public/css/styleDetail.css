@@ -1,0 +1,294 @@
+/* styleDetail.css */
+/* Algemene layout container */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("/assets/grijsbg.png");
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2.5rem;
+    background: linear-gradient(135deg, #b9dae6 0%, #87CEEB 100%);
+    border-radius: 1.5rem;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Fade in animatie */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Terug-link */
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+    padding: 0.6rem 1.2rem;
+    background-color: #ff6f61;
+    color: white;
+    font-weight: 600;
+    border-radius: 2rem;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(255, 111, 97, 0.3);
+    transition: background 0.3s, transform 0.3s;
+}
+
+.back-link:hover {
+    background-color: #e64a35;
+    transform: translateX(-4px);
+}
+
+/* Kaartindeling */
+.card-detail {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    background-color: #fff;
+    border-radius: 1.25rem;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Afbeelding hond */
+.detail-image {
+    background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.detail-image img {
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    aspect-ratio: 1 / 1;
+}
+
+/* Informatie hond */
+.card-content h1 {
+    font-size: 2rem;
+}
+
+.detail-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail-info h1 {
+    font-size: 2.75rem;
+    margin-bottom: 0.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+}
+
+.breed-age {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    display: flex;
+    gap: 1.2rem;
+}
+
+/* Statistiek-badges */
+.dog-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+}
+
+.gender-badge,
+.vaccinated-badge,
+.energy-badge {
+    padding: 0.4rem 1rem;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.gender-badge.male {
+    background-color: #e3f2fd;
+    color: #1565c0;
+}
+
+.gender-badge.female {
+    background-color: #fce4ec;
+    color: #c2185b;
+}
+
+.vaccinated-badge.yes {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.vaccinated-badge.no {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.energy-badge {
+    background-color: #fff3e0;
+    color: #ef6c00;
+}
+
+/* Owner-informatie */
+.owner-info {
+    background: #fafafa;
+    padding: 1.5rem;
+    border-left: 5px solid #ff6f61;
+    border-radius: 0.75rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 1px #eee;
+}
+
+.owner-info h3 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    font-size: 1.3rem;
+}
+
+.owner-card {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.owner-avatar {
+    background-color: #cfd8dc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: white;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.expert-badge {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: #ff6f61;
+    color: white;
+    font-size: 0.7rem;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owner-details h4 {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+.owner-details h4 a {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.owner-details h4 a:hover {
+    color: #ff6f61;
+}
+
+.owner-details p {
+    margin: 0.25rem 0 0;
+    color: #777;
+    font-size: 0.95rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+/* Beschrijving en lijsten */
+.description-section,
+.abilities-section,
+.hobbies-section {
+    margin-bottom: 2rem;
+}
+
+.description-section h3,
+.abilities-section h3,
+.hobbies-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+    border-bottom: 2px solid #ff6f61;
+    padding-bottom: 0.4rem;
+}
+
+.description-section p {
+    line-height: 1.7;
+    font-size: 1.05rem;
+    color: #333;
+}
+
+/* Custom bullet lijsten */
+.abilities-list,
+.hobbies-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.abilities-list li,
+.hobbies-list li {
+    padding-left: 1.75rem;
+    margin-bottom: 0.75rem;
+    position: relative;
+    color: #555;
+}
+
+.abilities-list li::before,
+.hobbies-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    top: 0.1rem;
+    color: #ff6f61;
+    font-weight: bold;
+}
+
+/* Responsiveness */
+@media (max-width: 900px) {
+    .card-detail {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 1.5rem;
+    }
+
+    .owner-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .detail-info h1 {
+        font-size: 2rem;
+    }
+}
