@@ -4,7 +4,7 @@
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 <link rel="stylesheet" href="/css/reset.css" />
-<link rel="stylesheet" href="/css/ownerdetail.css" />
+<link rel="stylesheet" href="/css/ownerDetail.css" />
 <%- include('../partials/header', { title: user.name }) %>
 
 
@@ -26,9 +26,15 @@
                     </div>
 
                     <div class="card-content">
-                        <h1>
-                            <%= user.name %>
-                        </h1>
+                        <div class="edit-header">
+                            <h1>
+                                <%= user.name %>
+                            </h1>
+                            <a href="/baasjes/<%= user.id %>/edit" class="btn edit-btn">
+                                <i class="fas fa-pen"></i> Bewerken
+                            </a>
+                        </div>
+
                         <p class="location">
                             <i class="fas fa-map-marker-alt" style="color:#ff6f61;"></i>
                             <%= user.address.city %>, <%= user.address.country %>
@@ -57,7 +63,7 @@
 
                 <% if (dogs?.length) { %>
                     <div class="dogs-section">
-                        <h3>Honden van <%= user.name.split(' ')[0] %></h3>
+                        <h3>Honden van <%= user.name%></h3>
                         <div class="dogs-grid">
                             <% dogs.forEach(dog => { %>
                                 <div class="dog-card">
