@@ -1,4 +1,4 @@
-export interface Owner {
+export interface User {
   id: number;
   name: string;
   isExperienced: boolean;
@@ -13,5 +13,6 @@ export interface Owner {
     country: string;
   };
   bio: string;
+  imageUrl:string;
 }
-export default Owner;
+export default User;

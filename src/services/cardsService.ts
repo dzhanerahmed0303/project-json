@@ -1,6 +1,6 @@
 import { Card  } from '../models/card';
-import { Owner  } from '../models/user';
-import owners from '../data/owners.json';
+import { User  } from '../models/user';
+import user from '../data/owners.json';
 
 import cards from '../data/characters.json';
 
@@ -47,8 +47,8 @@ export const getCardById = (id: number): Card | undefined => {
   return (cards as Card[]).find(card => card.id === id);
 };
 
-export const getOwnerById = (id: number): Owner | undefined => {
-  return (owners as Owner[]).find(owner => owner.id === id);
+export const getOwnerById = (id: number): User | undefined => {
+  return (user as User[]).find(user => user.id === id);
 };
 
 export const getCardsByOwner = (ownerId: number): Card[] => {

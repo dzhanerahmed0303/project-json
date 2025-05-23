@@ -4,159 +4,169 @@
         "name": "Mary Smith",
         "isExperienced": true,
         "contact": {
-            "phone": "555-1234",
-            "email": "mary@example.com"
+            "phone": "0486 12 34 56",
+            "email": "mary.smith@example.com"
         },
         "address": {
-            "street": "1 Golden Street",
-            "city": "Dogsville",
-            "postalCode": "10001",
-            "country": "Canineland"
+            "street": "Goudenstraat 1",
+            "city": "Antwerpen",
+            "postalCode": "2000",
+            "country": "België"
         },
-        "bio": "Mary is a seasoned dog trainer who specializes in Golden Retrievers and obedience training."
+        "bio": "Mary is een ervaren hondentrainer gespecialiseerd in Golden Retrievers en gehoorzaamheidstraining.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person6.jpg?raw=true"
     },
     {
         "id": 102,
-        "name": "Tom Harrison",
+        "name": "Carla Harrison",
         "isExperienced": false,
         "contact": {
-            "phone": "555-5678",
-            "email": "tom@example.com"
+            "phone": "0495 56 78 90",
+            "email": "carla.harrison@example.com"
         },
         "address": {
-            "street": "2 Puppy Lane",
-            "city": "Barkville",
-            "postalCode": "10002",
-            "country": "Canineland"
+            "street": "Puppylaan 2",
+            "city": "Gent",
+            "postalCode": "9000",
+            "country": "België"
         },
-        "bio": "Tom recently adopted his first dog and enjoys learning about pet care."
+        "bio": "Carla heeft recent haar eerste hond geadopteerd en leert graag over hondenverzorging.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person5.jpg?raw=true"
     },
     {
         "id": 103,
         "name": "Sarah Johnson",
         "isExperienced": true,
         "contact": {
-            "phone": "555-8765",
-            "email": "sarah@example.com"
+            "phone": "0478 87 65 43",
+            "email": "sarah.johnson@example.com"
         },
         "address": {
-            "street": "3 Woof Avenue",
-            "city": "Tailtown",
-            "postalCode": "10003",
-            "country": "Canineland"
+            "street": "Blafstraat 3",
+            "city": "Brussel",
+            "postalCode": "1000",
+            "country": "België"
         },
-        "bio": "Sarah has owned several dogs and is particularly fond of agility training."
+        "bio": "Sarah heeft meerdere honden gehad en is vooral dol op behendigheidstraining.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person4.jpg?raw=true"
     },
     {
         "id": 104,
         "name": "Kevin Brown",
         "isExperienced": false,
         "contact": {
-            "phone": "555-4321",
-            "email": "kevin@example.com"
+            "phone": "0499 43 21 56",
+            "email": "kevin.brown@example.com"
         },
         "address": {
-            "street": "4 Bark Street",
-            "city": "Fur City",
-            "postalCode": "10004",
-            "country": "Canineland"
+            "street": "Hondenweg 4",
+            "city": "Leuven",
+            "postalCode": "3000",
+            "country": "België"
         },
-        "bio": "Kevin is new to dog ownership but is eager to learn and train his pup."
+        "bio": "Kevin is nieuw in het hebben van een hond maar leert graag hoe hij zijn pup kan trainen.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person3.jpg?raw=true"
     },
     {
         "id": 105,
         "name": "Emily White",
         "isExperienced": true,
         "contact": {
-            "phone": "555-0001",
-            "email": "emily@example.com"
+            "phone": "0488 00 01 23",
+            "email": "emily.white@example.com"
         },
         "address": {
-            "street": "5 Paws Place",
-            "city": "Snifftown",
-            "postalCode": "10005",
-            "country": "Canineland"
+            "street": "Potenplein 5",
+            "city": "Brugge",
+            "postalCode": "8000",
+            "country": "België"
         },
-        "bio": "Emily has years of experience volunteering at animal shelters and raising rescue dogs."
+        "bio": "Emily heeft jarenlange ervaring als vrijwilliger in dierenasielen en het opvangen van zwerfhonden.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person7.jpg?raw=true"
     },
     {
         "id": 106,
         "name": "Sarah Blue",
         "isExperienced": true,
         "contact": {
-            "phone": "+32 987 65 43",
+            "phone": "+32 487 65 43 21",
             "email": "sarah.blue@example.com"
         },
         "address": {
-            "street": "123 Saluki Street",
-            "city": "Houndtown",
-            "postalCode": "13579",
-            "country": "Salukistan"
+            "street": "Windhondstraat 123",
+            "city": "Mechelen",
+            "postalCode": "2800",
+            "country": "België"
         },
-        "bio": "Sarah has a passion for Salukis and enjoys running with them in open fields."
+        "bio": "Sarah heeft een passie voor windhonden en rent graag met ze door open velden.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person8.jpg?raw=true"
     },
     {
         "id": 107,
         "name": "David King",
         "isExperienced": true,
         "contact": {
-            "phone": "+32 654 32 10",
+            "phone": "+32 473 21 54 76",
             "email": "david.king@example.com"
         },
         "address": {
-            "street": "456 Pharaoh Way",
-            "city": "Ancient City",
-            "postalCode": "24680",
-            "country": "Pharaohland"
+            "street": "Faraoweg 456",
+            "city": "Amsterdam",
+            "postalCode": "1012",
+            "country": "Nederland"
         },
-        "bio": "David is an experienced owner who loves exploring the history of the Pharaoh Hound breed."
+        "bio": "David is een ervaren hondeneigenaar die graag de geschiedenis van het Faraohondenras bestudeert.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person1.jpg?raw=true"
     },
     {
         "id": 108,
         "name": "Rebecca Gray",
         "isExperienced": false,
         "contact": {
-            "phone": "+32 741 85 29",
+            "phone": "+32 485 74 12 96",
             "email": "rebecca.gray@example.com"
         },
         "address": {
-            "street": "789 Dachshund Drive",
-            "city": "Barkville",
-            "postalCode": "54321",
-            "country": "Dachshundland"
+            "street": "Teckelstraat 789",
+            "city": "Rotterdam",
+            "postalCode": "3011",
+            "country": "Nederland"
         },
-        "bio": "Rebecca is a new dog owner who loves spending time with her quirky Dachshund."
+        "bio": "Rebecca is een nieuwe hondeneigenaar die graag tijd doorbrengt met haar eigenzinnige Teckel.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person9.jpg?raw=true"
     },
     {
         "id": 109,
         "name": "Michael Clark",
         "isExperienced": true,
         "contact": {
-            "phone": "+32 321 98 76",
+            "phone": "+32 498 32 19 87",
             "email": "michael.clark@example.com"
         },
         "address": {
-            "street": "101 Belgian Road",
-            "city": "Shepherdville",
-            "postalCode": "13579",
-            "country": "Belgium"
+            "street": "Herdersweg 101",
+            "city": "Utrecht",
+            "postalCode": "3511",
+            "country": "Nederland"
         },
-        "bio": "Michael is an experienced shepherd and uses his Belgian Shepherd for agility and work."
+        "bio": "Michael is een ervaren herder die zijn Belgische Herder gebruikt voor behendigheid en werk.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person2.jpg?raw=true"
     },
     {
         "id": 110,
         "name": "Linda Brown",
         "isExperienced": false,
         "contact": {
-            "phone": "+32 678 34 59",
+            "phone": "+32 467 83 45 92",
             "email": "linda.brown@example.com"
         },
         "address": {
-            "street": "102 Beagle Blvd",
-            "city": "Snifftown",
-            "postalCode": "54321",
-            "country": "Beagleland"
+            "street": "Beaglelaan 102",
+            "city": "Eindhoven",
+            "postalCode": "5611",
+            "country": "Nederland"
         },
-        "bio": "Linda loves spending time with her Beagle, especially on nature walks."
+        "bio": "Linda brengt graag tijd door met haar Beagle, vooral tijdens wandelingen in de natuur.",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/person10.jpg?raw=true"
     }
 ]

@@ -79,18 +79,18 @@
                                         <div class="owner-card">
                                             <div class="owner-avatar">
                                                 <i class="fas fa-user"></i>
-                                                <% if (owner.isExperienced) { %>
+                                                <% if (user.isExperienced) { %>
                                                     <span class="expert-badge" title="Ervaren baasje">
                                                         <i class="fas fa-star"></i>
                                                     </span>
                                                     <% } %>
                                             </div>
                                             <div class="owner-details">
-                                                <h4><a href="/owners/<%= owner.id %>">
-                                                        <%= owner.name %>
+                                                <h4><a href="/baasjes/<%= user.id %>">
+                                                        <%= user.name %>
                                                     </a></h4>
                                                 <p><i class="fas fa-map-marker-alt"></i>
-                                                    <%= owner.address.city %>
+                                                    <%= user.address.city %>
                                                 </p>
                                             </div>
                                         </div>

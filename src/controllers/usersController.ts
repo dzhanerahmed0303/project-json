@@ -1,6 +1,6 @@
 import { Request, Response, Router } from 'express';
 import usersService from '../services/usersService';
-import path from 'path';
+import { getCardsByOwner } from '../services/cardsService';
 
 const router = Router();
 
@@ -27,8 +27,11 @@ router.get('/:id', async (req: Request, res: Response) => {
         if (!user) {
             return res.status(404).render('error', { message: 'User not found' });
         }
-
-        res.render('cards/ownerDetail', { user });
+        const dogs = getCardsByOwner(userId);
+        res.render('cards/ownerDetail', { 
+            user,
+            dogs 
+        });
     } catch (error) {
         console.error('Error fetching user:', error);
         res.status(500).render('error', { message: 'Error loading user details' });

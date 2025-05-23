@@ -32,13 +32,13 @@ router.get('/:id', async (req: Request, res: Response) => {
     return res.status(404).render('error', { message: 'Card not found' });
   }
   
-  const owner = getOwnerById(card.ownerId);
+  const user = getOwnerById(card.ownerId);
   const relatedCards = getCardsByOwner(card.ownerId)
     .filter(c => c.id !== card.id);
   
   res.render('cards/detail', { 
     card,
-    owner,
+   user,
     relatedCards
   });
 });

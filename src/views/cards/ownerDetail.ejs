@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<link rel="stylesheet" href="/css/reset.css" />
+<link rel="stylesheet" href="/css/ownerdetail.css" />
+<%- include('../partials/header', { title: user.name }) %>
+
+
+    <body>
+        <%- include('../partials/navbar') %>
+
+            <div class="container">
+                <a href="/baasjes" class="back-link">← Terug</a>
+
+                <div class="card-box">
+                    <div class="card-image">
+                        <img src="<%= user.imageUrl %>" alt="<%= user.name %>">
+                        <div class="owner-stats">
+                            <span class="experience-badge <%= user.isExperienced ? 'yes' : 'no' %>">
+                                <i class="fa-solid fa-star"></i>
+                                <%= user.isExperienced ? 'Ervaren' : 'Beginner' %>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <h1>
+                            <%= user.name %>
+                        </h1>
+                        <p class="location">
+                            <i class="fas fa-map-marker-alt" style="color:#ff6f61;"></i>
+                            <%= user.address.city %>, <%= user.address.country %>
+                        </p>
+
+                        <div class="description-section">
+                            <h3>Over <%= user.name.split(' ')[0] %></h3>
+                    <p><%= user.bio %></p>
+                </div>
+
+                <div class="contact-section">
+                    <h3>Contactgegevens</h3>
+                    <ul class="contact-list">
+                        <li>
+                            <i class="fas fa-phone" style="color:#ff6f61;" ></i> <%= user.contact.phone %>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope" style="color:#ff6f61;" ></i> <%= user.contact.email %>
+                        </li>
+                        <li>
+                            <i class="fas fa-home" style="color:#ff6f61;"></i> 
+                            <%= user.address.street %>, <%= user.address.postalCode %> <%= user.address.city %>
+                        </li>
+                    </ul>
+                </div>
+
+                <% if (dogs?.length) { %>
+                    <div class="dogs-section">
+                        <h3>Honden van <%= user.name.split(' ')[0] %></h3>
+                        <div class="dogs-grid">
+                            <% dogs.forEach(dog => { %>
+                                <div class="dog-card">
+                                    <a href="/honden/<%= dog.id %>">
+                                        <img src="<%= dog.imageUrl %>" alt="<%= dog.name %>">
+                                        <h4><%= dog.name %></h4>
+                                        <p><%= dog.breedType %>, <%= dog.age %> jaar</p>
+                                    </a>
+                                </div>
+                            <% }); %>
+                        </div>
+                    </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+
+       <footer class="footer">
+    <div class="footer-content">
+        <p>© 2025 Dog Lovers Community</p>
+        <p>Contact us: <a href="mailto:contact@doglovers.com">contact@doglovers.com</a></p>
+        <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-square"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter-square"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram-square"></i></a>
+        </div>
+    </div>
+
+</footer>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
         "age": 3,
         "isActive": true,
         "birthDate": "2021-03-15",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/labrador.jpg?raw=true",
+        "imageUrl": "https://raw.githubusercontent.com/dzhanerahmed0303/project-json/main/public/assets/labrador.jpg",
         "breedType": "Labrador",
         "hobbies": [
             "Zwemmen",
@@ -26,7 +26,7 @@
         "age": 4,
         "isActive": true,
         "birthDate": "2020-07-22",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/puli.jpg?raw=true",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/puli.jpg?raw=true",
         "breedType": "Puli",
         "hobbies": [
             "Snuffelen",
@@ -45,7 +45,7 @@
         "age": 5,
         "isActive": true,
         "birthDate": "2019-09-10",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/germanShepherd.jpg?raw=true",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/duitseherder.jpg?raw=true",
         "breedType": "Duitse Herder",
         "hobbies": [
             "Waken",
@@ -64,7 +64,7 @@
         "age": 2,
         "isActive": true,
         "birthDate": "2022-01-30",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/Collie.jpg?raw=true",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/collie.jpg?raw=true",
         "breedType": "Collie",
         "hobbies": [
             "Aporteren",
@@ -83,7 +83,7 @@
         "age": 6,
         "isActive": false,
         "birthDate": "2018-05-11",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/poodle.jpg?raw=true",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/poodle.jpg?raw=true",
         "breedType": "Poodle",
         "hobbies": [
             "Rust",
@@ -102,7 +102,7 @@
         "age": 2,
         "isActive": true,
         "birthDate": "2022-01-10",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/saluki.jpg?raw=true",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/saluki.jpg?raw=true",
         "breedType": "Saluki",
         "hobbies": [
             "Chasing",
@@ -122,7 +122,7 @@
         "age": 4,
         "isActive": true,
         "birthDate": "2019-02-20",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/pharaohHound.jpg?raw=true",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/pharaoh.jpg?raw=true",
         "breedType": "Pharaoh Hound",
         "hobbies": [
             "Chasing",
@@ -142,7 +142,7 @@
         "age": 3,
         "isActive": true,
         "birthDate": "2020-03-15",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/dachshund.jpg?raw=true",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/dachshund.jpg?raw=true",
         "breedType": "Dachshund",
         "hobbies": [
             "Digging",
@@ -162,7 +162,7 @@
         "age": 6,
         "isActive": true,
         "birthDate": "2017-10-05",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/belgianShepherd.jpg?raw=true",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/belgianshepherd.jpg?raw=true",
         "breedType": "Belgian Shepherd",
         "hobbies": [
             "Agility",
@@ -182,7 +182,7 @@
         "age": 5,
         "isActive": true,
         "birthDate": "2018-07-22",
-        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/assets/beagle.jpg?raw=true",
+        "imageUrl": "https://github.com/dzhanerahmed0303/project-json/blob/main/public/assets/beagle.jpg?raw=true",
         "breedType": "Beagle",
         "hobbies": [
             "Sniffing",

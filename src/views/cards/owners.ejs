@@ -1,27 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 
 <%- include('../partials/header', { title: 'Baasjes' }) %>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="/css/ownerstyle.css">
 
-
     <body>
         <%- include('../partials/navbar') %>
 
             <div class="container">
-                <h1 class="page-title">Our Pet Lovers Community</h1>
-                <p class="page-subtitle">Connect with fellow dog enthusiasts</p>
+                <!-- <h1 class="page-title">Onze Huisdierliefhebbers Community</h1>
+                <p class="page-subtitle">Verbind je met andere hondenliefhebbers</p> -->
 
                 <div class="users-grid">
                     <% users.forEach(user=> { %>
                         <div class="user-card">
                             <div class="user-card-header">
                                 <div class="user-avatar">
-                                    <i class="fas fa-user"></i>
+                                    <img src="<%= user.imageUrl %>" alt=".">
                                     <% if(user.isExperienced) { %>
-                                        <span class="expert-badge" title="Experienced Owner"><i
+                                        <span class="expert-badge" title="Ervaren Baasje"><i
                                                 class="fas fa-star"></i></span>
                                         <% } %>
                                 </div>
@@ -47,7 +46,7 @@
                                 </div>
                             </div>
                             <div class="user-card-footer">
-                                <a href="/users/<%= user.id %>" class="btn profile-btn">View Profile</a>
+                                <a href="/baasjes/<%= user.id %>" class="btn profile-btn">Bekijk Profiel</a>
                             </div>
                         </div>
                         <% }); %>
