@@ -1,36 +1,39 @@
 <!DOCTYPE html>
+<html lang="nl">
 
 <%- include('../partials/header', { title: 'Registreren' }) %>
 
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/loginstyle.css"> <!-- Zelfde stijl gebruiken -->
+    <head>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/loginstyle.css"> <!-- Zelfde stijl als login -->
+    </head>
 
     <body>
         <%- include('../partials/navbar') %>
 
             <div class="login-container">
-                <form method="POST" action="/register" class="login-form">
+                <form method="POST" action="/cards/register" class="login-form">
                     <h1>Account aanmaken</h1>
 
-                    <label for="name">Naam</label>
-                    <input type="text" id="name" name="name" required>
+                    <% if (error) { %>
+                        <p class="error">
+                            <%= error %>
+                        </p>
+                        <% } %>
 
-                    <label for="email">E-mailadres</label>
-                    <input type="email" id="email" name="email" required>
+                            <label for="username">Gebruikersnaam</label>
+                            <input type="text" id="username" name="username" required>
 
-                    <label for="password">Wachtwoord</label>
-                    <input type="password" id="password" name="password" required>
+                            <label for="password">Wachtwoord</label>
+                            <input type="password" id="password" name="password" required>
 
-                    <label for="confirmPassword">Bevestig wachtwoord</label>
-                    <input type="password" id="confirmPassword" name="confirmPassword" required>
+                            <button type="submit" class="btn">Registreren</button>
 
-                    <button type="submit" class="btn">Registreren</button>
-
-                    <p class="hint">Heb je al een account? <a href="/login">Log in</a>.</p>
+                            <p class="hint">Heb je al een account? <a href="/cards/login">Log in</a>.</p>
                 </form>
             </div>
 
             <%- include('../partials/footer') %>
     </body>
 
-    </html>
+</html>

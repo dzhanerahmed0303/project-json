@@ -114,5 +114,5 @@ function toonHondenOpEigenaar(ownerId: number) {
     toonHoofdmenu();
 }
 
-// Start de applicatie
+
 toonHoofdmenu();

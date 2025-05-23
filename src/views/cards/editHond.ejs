@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
-
-<%- include('../partials/header') %>
+<%- include('../partials/header', { title: 'Hond bewerken' }) %>
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/editHond.css">
 
@@ -12,8 +11,7 @@
                 <h1>Hond bewerken: <%= card.name %>
                 </h1>
 
-                <form action="/honden/<%= card.id %>/edit" method="POST" class="edit-form">
-
+                <form action="/cards/<%= card.id %>/edit" method="POST" class="edit-form">
                     <label for="name">Naam:</label>
                     <input type="text" name="name" id="name" value="<%= card.name %>" required>
 
@@ -29,13 +27,12 @@
                         <option value="Female" <%=card.gender==='Female' ? 'selected' : '' %>>♀ Vrouw</option>
                     </select>
 
-                    <!-- Extra: energieLevel -->
                     <label for="energyLevel">Energie niveau (0-10):</label>
                     <input type="number" name="energyLevel" id="energyLevel" min="0" max="10"
                         value="<%= card.energyLevel %>">
 
                     <button type="submit" class="btn">Opslaan</button>
-                    <a href="/honden/<%= card.id %>" class="btn">Annuleren</a>
+                    <a href="/cards/<%= card.id %>" class="btn">Annuleren</a>
                 </form>
             </div>
 

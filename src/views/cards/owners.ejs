@@ -2,23 +2,20 @@
 <html lang="nl">
 
 <%- include('../partials/header', { title: 'Baasjes' }) %>
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/ownerstyle.css">
 
     <body>
         <%- include('../partials/navbar') %>
 
             <div class="container">
-                <!-- <h1 class="page-title">Onze Huisdierliefhebbers Community</h1>
-                <p class="page-subtitle">Verbind je met andere hondenliefhebbers</p> -->
-
                 <div class="users-grid">
                     <% users.forEach(user=> { %>
                         <div class="user-card">
                             <div class="user-card-header">
                                 <div class="user-avatar">
-                                    <img src="<%= user.imageUrl %>" alt=".">
+                                    <img src="<%= user.imageUrl %>" alt="<%= user.name %>">
                                     <% if(user.isExperienced) { %>
                                         <span class="expert-badge" title="Ervaren Baasje"><i
                                                 class="fas fa-star"></i></span>

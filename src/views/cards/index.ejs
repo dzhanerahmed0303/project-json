@@ -32,11 +32,12 @@
                 <div class="cards-grid">
                     <% cards.forEach(card=> { %>
                         <div class="dog-card">
-                            <a href="/honden/<%= card.id %>" class="card-link">
+                            <a href="/cards/<%= card.id %>" class="card-link">
                                 <img src="<%= card.imageUrl %>" alt="Picture of <%= card.name %>" class="dog-image">
                                 <div class="dog-info">
                                     <h2>
-                                        <%= card.name %> <span class="gender">
+                                        <%= card.name %>
+                                            <span class="gender">
                                                 <%= card.gender==='Male' ? '♂' : '♀' %>
                                             </span>
                                     </h2>
@@ -57,13 +58,13 @@
                                 </div>
                             </a>
                         </div>
-                        <% }); %>
+                        <% }) %>
                 </div>
 
                 <% if (cards.length===0) { %>
                     <div class="no-results">
                         <p>Geen hondjes gevonden met deze criteria.</p>
-                        <a href="/honden" class="btn">Filters wissen</a>
+                        <a href="/cards" class="btn">Filters wissen</a>
                     </div>
                     <% } %>
             </div>

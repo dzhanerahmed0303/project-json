@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<html lang="nl">
 
 <head>
     <%- include('../partials/header', { title: card.name }) %>
@@ -11,8 +11,7 @@
     <%- include('../partials/navbar') %>
 
         <div class="container">
-            <a href="/honden" class="back-link">← Terug</a>
-
+            <a href="/cards" class="back-link">← Terug</a>
 
             <div class="card-box">
                 <div class="card-image">
@@ -37,9 +36,11 @@
                         <h1>
                             <%= card.name %>
                         </h1>
-                        <a href="/honden/<%= card.id %>/edit" class="btn edit-btn">
-                            <i class="fas fa-pen"></i> Bewerken
-                        </a>
+                        <% if (user?.role==='ADMIN' ) { %>
+                            <a href="/cards/<%= card.id %>/edit" class="btn edit-btn">
+                                <i class="fas fa-pen"></i> Bewerken
+                            </a>
+                            <% } %>
                     </div>
 
                     <p class="breed-age">
@@ -103,7 +104,6 @@
                                     </div>
                 </div>
             </div>
-
         </div>
 
         <%- include('../partials/footer') %>

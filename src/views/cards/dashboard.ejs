@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="nl">
+<%- include('../partials/header', { title: 'Dashboard' }) %>
+
+    <head>
+        <link rel="stylesheet" href="/css/reset.css">
+        <link rel="stylesheet" href="/css/dashboard.css">
+    </head>
+
+    <body>
+        <%- include('../partials/navbar') %>
+
+            <div class="container">
+                <div class="dashboard-header">
+                    <h1>Welkom terug, <%= user.username %>!</h1>
+                    <p class="role-info">Je rol: <strong>
+                            <%= user.role %>
+                        </strong></p>
+                </div>
+
+                <div class="cards-grid">
+                    <% cards.forEach(card=> { %>
+                        <div class="dog-card">
+                            <a href="/cards/<%= card.id %>" class="card-link">
+                                <img src="<%= card.imageUrl %>" alt="Afbeelding van <%= card.name %>" class="dog-image">
+                                <div class="dog-info">
+                                    <h2>
+                                        <%= card.name %> <span class="gender">
+                                                <%= card.gender==='Male' ? '♂' : '♀' %>
+                                            </span>
+                                    </h2>
+                                    <p class="breed-age">
+                                        <%= card.breedType %> • <%= card.age %> jaar
+                                    </p>
+
+                                    <div class="energy-level">
+                                        <% for (let i=0; i < 10; i++) { %>
+                                            <i
+                                                class="fas fa-bolt <%= i < card.energyLevel ? 'bolt-full' : 'bolt-empty' %>"></i>
+                                            <% } %>
+                                    </div>
+
+                                    <p class="vaccinated <%= card.vaccinated ? 'vaccinated-yes' : 'vaccinated-no' %>">
+                                        <%= card.vaccinated ? '✓ Gevaccineerd' : '✗ Niet gevaccineerd' %>
+                                    </p>
+
+                                    <% if (user?.role==='ADMIN' ) { %>
+                                        <a href="/cards/<%= card.id %>/edit" class="btn edit-btn">✏️ Bewerken</a>
+                                        <% } %>
+                                </div>
+                            </a>
+                        </div>
+                        <% }) %>
+                </div>
+
+                <form action="/cards/logout" method="POST" class="logout-form">
+                    <button type="submit" class="btn logout-btn">Uitloggen</button>
+                </form>
+            </div>
+
+            <%- include('../partials/footer') %>
+    </body>
+
+</html>

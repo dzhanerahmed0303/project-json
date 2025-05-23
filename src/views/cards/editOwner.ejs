@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="nl">
-<link rel="stylesheet" href="/css/reset.css">
-<%- include('../partials/header') %>
-    <title>Informatie wijziging</title>
+<%- include('../partials/header', { title: 'Eigenaar bewerken' }) %>
+    <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="/css/editOwner.css">
-
 
     <body>
         <%- include('../partials/navbar') %>
@@ -14,7 +12,6 @@
                 </h1>
 
                 <form action="/baasjes/<%= user.id %>/edit" method="POST" class="edit-form">
-
                     <label for="name">Naam:</label>
                     <input type="text" id="name" name="name" value="<%= user.name %>" required>
 
@@ -26,7 +23,6 @@
 
                     <label for="phone">Telefoonnummer:</label>
                     <input type="text" id="phone" name="phone" value="<%= user.contact?.phone %>">
-
 
                     <label for="isExperienced">Ervaring:</label>
                     <select name="isExperienced" id="isExperienced">
