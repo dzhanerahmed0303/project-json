@@ -1,0 +1,123 @@
+/* public/css/login.css */
+
+/* Maak de body een kolom-layout zodat navbar, content en footer netjes verdeeld worden */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f9f9f9;
+    background-image: url("/assets/grijsbg.png");
+}
+
+/* Navbar en footer blijven boven en onder staan */
+header,
+footer {
+    flex: 0 0 auto;
+}
+
+/* Login-container vult de vrije ruimte en centreert daarin de form */
+.login-container {
+    flex: 1 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    flex-direction: column;
+
+
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Het formulier zelf */
+.login-form {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Titel bovenaan het formulier */
+.login-container h1 {
+    text-align: center;
+    color: #FF7F50;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    font-weight: 600;
+    background-color: #f9f9f998;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+/* Labels en inputs netjes onder elkaar */
+.login-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 1rem;
+    color: #333;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 0.3rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Inloggen-knop */
+.btn {
+    display: block;
+    width: 100%;
+    background-color: #FF7F50;
+    color: #fff;
+    padding: 0.8rem;
+    margin-top: 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e76e44;
+}
+
+/* Hint onder het formulier */
+.hint {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    background-color: #f9f9f998;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.hint a {
+    color: #FF7F50;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.hint a:hover {
+    text-decoration: underline;
+}

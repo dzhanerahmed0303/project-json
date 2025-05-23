@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<%- include('../partials/header', { title: 'Inloggen' }) %>
+
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/loginstyle.css">
+
+    <%- include('../partials/navbar') %>
+
+        <body>
+
+
+            <div class="login-container">
+                <h1>Welkom terug!</h1>
+
+                <form method="POST" action="/login" class="login-form">
+                    <label for="email">E-mailadres</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="password">Wachtwoord</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <button type="submit" class="btn">Inloggen</button>
+                </form>
+
+                <p class="hint">
+                    Nog geen account? <a href="/register">Registreer hier</a>.
+                </p>
+            </div>
+
+
+        </body>
+        <%- include('../partials/footer') %>
+
+</html>

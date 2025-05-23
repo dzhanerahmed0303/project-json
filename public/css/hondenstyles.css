@@ -1,7 +1,7 @@
 body {
     background-image: url("/assets/grijsbg.png");
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -16,7 +16,7 @@ body {
     background: linear-gradient(135deg, #b9dae6 0%, #87CEEB 100%);
     font-family: Arial, Helvetica, sans-serif;
     border-radius: 0 0 1rem 1rem;
-    box-shadow: 0 0 3px #87CEEB, 0 0 8px #87CEEB, 0 0 12px #87CEEB;
+
     animation: fadeIn 0.7s ease-in-out;
 }
 
@@ -140,6 +140,14 @@ body {
 
 .energy-level {
     margin: 10px 0;
+}
+
+.bolt-full {
+    color: #FF7F50;
+}
+
+.bolt-empty {
+    color: #ccc;
 }
 
 .vaccinated-yes {

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<%- include('../partials/header') %>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/editHond.css">
+
+    <body>
+        <%- include('../partials/navbar') %>
+
+            <div class="container">
+                <h1>Hond bewerken: <%= card.name %>
+                </h1>
+
+                <form action="/honden/<%= card.id %>/edit" method="POST" class="edit-form">
+
+                    <label for="name">Naam:</label>
+                    <input type="text" name="name" id="name" value="<%= card.name %>" required>
+
+                    <label for="age">Leeftijd:</label>
+                    <input type="number" name="age" id="age" value="<%= card.age %>" min="0" required>
+
+                    <label for="breedType">Ras:</label>
+                    <input type="text" name="breedType" id="breedType" value="<%= card.breedType %>" required>
+
+                    <label for="gender">Geslacht:</label>
+                    <select name="gender" id="gender" required>
+                        <option value="Male" <%=card.gender==='Male' ? 'selected' : '' %>>♂ Man</option>
+                        <option value="Female" <%=card.gender==='Female' ? 'selected' : '' %>>♀ Vrouw</option>
+                    </select>
+
+                    <!-- Extra: energieLevel -->
+                    <label for="energyLevel">Energie niveau (0-10):</label>
+                    <input type="number" name="energyLevel" id="energyLevel" min="0" max="10"
+                        value="<%= card.energyLevel %>">
+
+                    <button type="submit" class="btn">Opslaan</button>
+                    <a href="/honden/<%= card.id %>" class="btn">Annuleren</a>
+                </form>
+            </div>
+
+            <%- include('../partials/footer') %>
+    </body>
+
+</html>

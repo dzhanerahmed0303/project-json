@@ -27,7 +27,9 @@ router.get('/:id', async (req: Request, res: Response) => {
         if (!user) {
             return res.status(404).render('error', { message: 'User not found' });
         }
-        const dogs = getCardsByOwner(userId);
+
+        const dogs = await getCardsByOwner(userId); // <-- HIER FIX
+
         res.render('cards/ownerDetail', { 
             user,
             dogs 
@@ -37,5 +39,35 @@ router.get('/:id', async (req: Request, res: Response) => {
         res.status(500).render('error', { message: 'Error loading user details' });
     }
 });
+
+// GET edit pagina
+router.get('/:id/edit', async (req: Request, res: Response) => {
+  const userId = parseInt(req.params.id);
+  const user = await usersService.getUserById(userId);
+  if (!user) {
+    return res.status(404).render('error', { message: 'User not found' });
+  }
+  res.render('cards/editOwner', { user });
+});
+
+// POST edit submit
+router.post('/:id/edit', async (req: Request, res: Response) => {
+  const userId = parseInt(req.params.id);
+  const { name, bio, email, phone, isExperienced } = req.body;
+
+
+  await usersService.updateUser(userId, {
+    name,
+    bio,
+    isExperienced: isExperienced === 'true',
+    contact: {
+      email,
+        phone,
+    }
+  });
+
+  res.redirect(`/baasjes/${userId}`);
+});
+
 
 export default router;

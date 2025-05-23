@@ -4,7 +4,7 @@
 <head>
     <%- include('../partials/header', { title: card.name }) %>
         <link rel="stylesheet" href="/css/reset.css" />
-        <link rel="stylesheet" href="/css/styleDetail.css" />
+        <link rel="stylesheet" href="/css/hondenDetail.css" />
 </head>
 
 <body>
@@ -33,9 +33,15 @@
                 </div>
 
                 <div class="card-content">
-                    <h1>
-                        <%= card.name %>
-                    </h1>
+                    <div class="edit-header">
+                        <h1>
+                            <%= card.name %>
+                        </h1>
+                        <a href="/honden/<%= card.id %>/edit" class="btn edit-btn">
+                            <i class="fas fa-pen"></i> Bewerken
+                        </a>
+                    </div>
+
                     <p class="breed-age">
                         <%= card.breedType %> • <%= card.age %> jaar oud
                     </p>
@@ -78,7 +84,7 @@
                                         <h3>Baasje:</h3>
                                         <div class="owner-card">
                                             <div class="owner-avatar">
-                                                <i class="fas fa-user"></i>
+                                                <img src="<%= user.imageUrl %>" alt="<%= user.name %>">
                                                 <% if (user.isExperienced) { %>
                                                     <span class="expert-badge" title="Ervaren baasje">
                                                         <i class="fas fa-star"></i>

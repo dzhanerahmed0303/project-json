@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="nl">
+<link rel="stylesheet" href="/css/reset.css">
+<%- include('../partials/header') %>
+    <title>Informatie wijziging</title>
+    <link rel="stylesheet" href="/css/editOwner.css">
+
+
+    <body>
+        <%- include('../partials/navbar') %>
+
+            <div class="container">
+                <h1>Bewerk eigenaar: <%= user.name %>
+                </h1>
+
+                <form action="/baasjes/<%= user.id %>/edit" method="POST" class="edit-form">
+
+                    <label for="name">Naam:</label>
+                    <input type="text" id="name" name="name" value="<%= user.name %>" required>
+
+                    <label for="bio">Bio:</label>
+                    <textarea id="bio" name="bio" required><%= user.bio %></textarea>
+
+                    <label for="email">E-mailadres:</label>
+                    <input type="email" id="email" name="email" value="<%= user.contact?.email %>" required>
+
+                    <label for="phone">Telefoonnummer:</label>
+                    <input type="text" id="phone" name="phone" value="<%= user.contact?.phone %>">
+
+
+                    <label for="isExperienced">Ervaring:</label>
+                    <select name="isExperienced" id="isExperienced">
+                        <option value="true" <%=user.isExperienced ? 'selected' : '' %>>Ervaren</option>
+                        <option value="false" <%=!user.isExperienced ? 'selected' : '' %>>Beginner</option>
+                    </select>
+
+                    <button type="submit" class="btn">Opslaan</button>
+                    <a href="/baasjes/<%= user.id %>" class="btn">Annuleren</a>
+                </form>
+            </div>
+
+            <%- include('../partials/footer') %>
+    </body>
+
+</html>

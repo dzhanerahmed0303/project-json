@@ -2,7 +2,7 @@
 
 <%- include('../partials/header', { title: 'Mijn hondjes' }) %>
     <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/hondenstyles.css" />
 
     <body>
         <%- include('../partials/navbar') %>
@@ -43,11 +43,14 @@
                                     <p class="breed-age">
                                         <%= card.breedType %> • <%= card.age %> jaar
                                     </p>
+
                                     <div class="energy-level">
-                                        <% Array.from({ length: card.energyLevel }).forEach(()=> { %>
-                                            <i class="fas fa-bolt" style="color: #FF7F50;"></i>
-                                            <% }); %>
+                                        <% for (let i=0; i < 10; i++) { %>
+                                            <i
+                                                class="fas fa-bolt <%= i < card.energyLevel ? 'bolt-full' : 'bolt-empty' %>"></i>
+                                            <% } %>
                                     </div>
+
                                     <p class="vaccinated <%= card.vaccinated ? 'vaccinated-yes' : 'vaccinated-no' %>">
                                         <%= card.vaccinated ? '✓ Gevaccineerd' : '✗ Niet gevaccineerd' %>
                                     </p>
